@@ -1,0 +1,8 @@
+                 U std::ostream::operator<<(int)
+0000000000000000 r std::__detail::__integer_to_chars_is_unsigned<unsigned int>
+0000000000000001 r std::__detail::__integer_to_chars_is_unsigned<unsigned long>
+0000000000000002 r std::__detail::__integer_to_chars_is_unsigned<unsigned long long>
+                 U std::ios_base_library_init()
+                 U std::cout
+                 U std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char)
+0000000000000000 T main

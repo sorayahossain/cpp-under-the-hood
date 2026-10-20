@@ -1,0 +1,7 @@
+add_subdirectory(00_file_structure)
+add_subdirectory(01_build_pipeline)
+add_subdirectory(02_static_dynamic_library)
+
+add_executable(memory_sections 03_runtime_memory/memory_sections.cpp)
+add_executable(stack_calls 03_runtime_memory/stack_calls.cpp)
+add_executable(scopes_and_loops 03_runtime_memory/scopes_and_loops.cpp)

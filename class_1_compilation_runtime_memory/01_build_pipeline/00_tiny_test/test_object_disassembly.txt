@@ -1,0 +1,28 @@
+
+test.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	48 83 ec 10          	sub    $0x10,%rsp
+   8:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%rbp)
+   f:	8b 45 fc             	mov    -0x4(%rbp),%eax
+  12:	83 c0 05             	add    $0x5,%eax
+  15:	89 45 f8             	mov    %eax,-0x8(%rbp)
+  18:	8b 45 f8             	mov    -0x8(%rbp),%eax
+  1b:	89 c6                	mov    %eax,%esi
+  1d:	48 8d 05 00 00 00 00 	lea    0x0(%rip),%rax        # 24 <main+0x24>
+			20: R_X86_64_PC32	std::cout-0x4
+  24:	48 89 c7             	mov    %rax,%rdi
+  27:	e8 00 00 00 00       	call   2c <main+0x2c>
+			28: R_X86_64_PLT32	std::ostream::operator<<(int)-0x4
+  2c:	be 0a 00 00 00       	mov    $0xa,%esi
+  31:	48 89 c7             	mov    %rax,%rdi
+  34:	e8 00 00 00 00       	call   39 <main+0x39>
+			35: R_X86_64_PLT32	std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char)-0x4
+  39:	b8 00 00 00 00       	mov    $0x0,%eax
+  3e:	c9                   	leave
+  3f:	c3                   	ret
